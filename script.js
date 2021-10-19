@@ -67,7 +67,6 @@ const deleteRow = () => {
     }
     if (matrix.rows == currentIndex.row) {
       deleteRowsButton.style.top = `${(currentIndex.row-1)*37}px`;
-      hideDeleteButton();
     }
 };
 
@@ -84,7 +83,6 @@ const deleteColumn = () => {
     }
     if (matrix.columns == currentIndex.column) {
       deleteColsButton.style.left = `${(currentIndex.column-1)*37}px`;
-      hideDeleteButton();
     }
     
 };
