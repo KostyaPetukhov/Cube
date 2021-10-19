@@ -1,39 +1,56 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Kubik</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <section>
-            <div class="deleteCol">
-                <input class="deleteButton" id="delButt" value="&#8722;" onclick="delCol()" onmouseenter="showDeleteButton()" 
-                onmouseleave="hideDeleteButton()" type="button">
-            </div>
-            <div class = "middleContext">
-                <div class = "deleteRow">
-                    <input class = "deleteButton" value="&#8722;" onclick="delRow()" onmouseenter="showDeleteButton()" 
-                    onmouseleave="hideDeleteButton()" type="button">
-                </div>
-                <table id="cube" onmouseenter="showDeleteButton()" onmouseleave="hideDeleteButton()">
-                    <tbody>
-                        <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-                        <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-                        <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-                        <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr> 
-                    </tbody>
-                </table>
-                <div class = "addCol">
-                    <input class = "addButton" value="+" onclick="addCol()" type="button">
-                </div>
-            </div>
-            <div class = "addRow">
-                <button class = "addButton" onclick="addRow()">+</button>
-            </div>
-        </section>
-        <script src="script.js"></script> 
-    </body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cube</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <section>
+      <div class="deleteCol" onmouseenter="showDeleteButton()" >
+        <input
+          class="deleteButton"
+          id="deleteColsButton"
+          onclick="deleteColumn()"
+          value="&#8722;"
+          type="button"
+        />
+      </div>
+      <div class="middleContext">
+        <div class="deleteRow" onmouseenter="showDeleteButton()" >
+          <input
+            class="deleteButton"
+            id="deleteRowsButton"
+            onclick="deleteRow()"
+            value="&#8722;"
+            type="button"
+          />
+        </div>
+        <table 
+          id="cube" 
+          onmouseenter="showDeleteButton()"
+          onmouseleave="hideDeleteButton()"
+        >
+        </table>
+        <div class="addCol">
+          <input 
+            class="addButton" 
+            value="+" 
+            onclick="addColumn()"
+            type="button" 
+          />
+        </div>
+      </div>
+      <div class="addRow">
+        <input 
+            class="addButton" 
+            value="+" 
+            onclick="addRow()"
+            type="button" 
+          />
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>

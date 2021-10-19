@@ -66,11 +66,15 @@ table {
     background-color: #ca4c49;
     cursor: pointer;
 }
-
 .deleteCol {
     margin-left: 38px;
 }
-
 .addRow {
     margin-left: 38px;
+}
+#deleteRowsButton {
+    position: relative;
+}
+#deleteColsButton {
+    position: relative;
 }
